@@ -15,8 +15,10 @@ services:
     ports:
       - "5432:5432"
 
-  web:
-    build: .
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.yml
     container_name: todo_django
     restart: always
     env_file: .env
@@ -34,11 +36,9 @@ services:
     container_name: todo_nginx
     restart: always
     depends_on:
-      - web
+      - api
     volumes:
-      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - static_volume:/app/static
-      - media_volume:/app/media
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro 
     ports:
       - "80:80"
 
