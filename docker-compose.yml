@@ -24,9 +24,6 @@ services:
     env_file: .env
     depends_on:
       - db
-    volumes:
-      - static_volume:/app/static
-      - media_volume:/app/media
     expose:
       - "8000"
     command: gunicorn api.wsgi:application --bind 0.0.0.0:8000
@@ -44,5 +41,3 @@ services:
 
 volumes:
   postgres_data:
-  static_volume:
-  media_volume:
