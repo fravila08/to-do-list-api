@@ -48,4 +48,6 @@ Feel free to fork this repository and submit pull requests! 🚀
 
 This project is open-source and available under the **MIT License**.  
 
-💡 **Author:** Francisco Avila | [GitHub](https://github.com/fravila08) | [LinkedIn](https://www.linkedin.com/in/francisco-r-avila)  
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+
+## 💡 **Author:** Francisco Avila | [GitHub](https://github.com/fravila08) | [LinkedIn](https://www.linkedin.com/in/francisco-r-avila)  
